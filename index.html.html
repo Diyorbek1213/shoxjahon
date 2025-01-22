@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>shoh</title>
+	<style>
+		body {
+			font-family: Arial;
+			margin: 0px
+		}
+
+		.header_logo {
+			width: 175px;
+			height: 75px;
+			
+		}
+
+		.header_container {
+			padding: 20px 15px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 1400px;
+			margin: 0px auto;
+		}
+
+		.header_menu {
+			display: flex;
+			align-items: center;
+		}
+
+		.menu_item {
+			margin-left: 40px;
+			font-size: 18px;
+			font-weight: 600;
+			font-family: Arial;
+		}
+
+		.header_button {
+			background-color: darkblue;
+			color: #fff;
+			padding: 8px 20px;
+			border-radius: 8px;
+		}
+
+		.main_img img{
+			width: 529px;
+			height: 683px;
+			background-color: #ccc;
+			border-radius: 8px;
+		}
+		.main_container {
+			display: flex;
+			justify-content: space-between;
+			width: 1400px;
+			margin: 0px auto;
+			background-color: #021934;
+			padding: 65px 64px 0px 64px;
+			color: #fff;
+			align-items: center;
+			border-radius: 8px;
+		}
+
+		.main_content {
+			width: 650px;
+		}
+
+		.main_title {
+			font-size: 64px;
+			font-weight: 700;
+			line-height: 88px;
+			margin-bottom: 24px;
+		}
+
+		.main_subtitle {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 27px;
+			margin-bottom: 66px;
+		}
+
+		.main_button {
+			font-size: 16px;
+			line-height: 32px;
+			background-color: #605deb;
+			border-radius: 8px;
+			color: #fff;
+			display: inline;
+			padding: 12px 32px;
+		}
+
+		.main_items {
+			display: flex;
+			justify-content: space-between;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 24px;
+			margin-top: 56px;
+		}
+
+		.study_container {
+			width: 1400px;
+			margin: 0px auto;
+			padding: 80px 0px;
+			color:black
+		}
+
+		.study_title {
+			font-size: 48px;
+			font-weight: 700;
+			line-height: 64px;
+			text-align: center;
+			margin-bottom: 56px;
+		}
+
+		.study_items {
+			display: flex;
+			justify-content: center;
+
+		}
+
+		.study_item {
+			font-size: 16px;
+			line-height: 32px;
+			color: #d59999;
+			font-weight: 600;
+			padding: 8px 72.5px;
+			border-radius: 8px;
+		}
+
+		.active {
+			background-color: #858dfc;
+			color: #fff;
+		}
+		.sub_box_img img{
+			
+			width:100% ;
+			height: 208px;
+			border-radius: 8px;
+		
+		}
+		.sub_box{
+			max-width: 262px;
+			padding:16px ;
+		}
+		.sub_box_title{
+		background-color: #605deb;
+		border-radius: 5px;
+		display: inline;
+		margin-top: -30px;
+		margin-bottom:15px ;
+		padding: 12px 20px;
+		}
+		.sub{
+			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width: 295px;
+			border-radius: 8px;
+		}
+		.sub_box_subtitle{
+			margin-top: 30px;
+		}
+		.sub_box_name{
+			margin-top: 20px;
+			color: #605deb;
+		}
+		.sub_sub{
+			display: flex;
+			justify-content: center;
+		}
+		.subjects{
+			display: flex;
+			justify-content: space-between;
+			margin-top: 50px;
+		}
+		.maymun_container{
+			width: 1400px;
+			margin: 0px auto;
+		}
+		.maymun_title{
+			font-size: 34px;
+			line-height: 32px;
+			font-weight: 700;
+			margin-bottom: 30px;
+		}
+		.maymun_items img{
+			text-align: center;
+			color: white;
+			width: 296px;
+			height: 350px;
+			border-radius: 8px;
+			display: flex;
+			justify-content: center;
+			align-items: end;
+			padding-bottom: 15px;
+			font-weight: 500;
+		}
+        .maymun_dada{
+	display: flex;
+	justify-content: space-between;
+        }
+.info_container{
+	width: 1400px;
+	margin: 0px auto;
+	margin-top: 160px;
+}
+.info_img{
+width: 80px;
+height: 80px;
+
+border-radius: 15px;
+}
+.info_column{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.info_num{
+	font-weight: 700;
+	font-size: 32px;
+}
+.info_text{
+	font-weight: 200;
+	font-size: 26px;
+}
+.info_box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.become_img img{
+	width: 608px;
+	height: 657px;
+	border-radius: 8px;
+	
+}
+.become_container{
+width: 1400px;
+margin: 0px auto;
+margin-top: 160px;
+}
+.become_column{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.become_text{
+width: 585px;
+}
+.b_t_t{
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 63.98px;
+	color: #1C3554;
+}
+.b_t_f{
+	padding: 16px 40px;
+	background-color:#F72585;
+	border-radius: 8px;
+	display: inline;
+	color: white;
+
+}
+.b_t_s{
+	margin-top: 32px;
+	color: #808080;
+}
+.b_t_g{
+	margin-top: 24px;
+	margin-bottom: 40px;
+	color: #808080;
+}
+.sigma_img img{
+	border-radius: 8px;
+width: 338px;
+height: 377px;
+margin: 64px;
+margin-left: 176px;
+}
+.sigma_container{
+	width: 1400px;
+	margin: 0px auto;
+	margin-top: 224px;
+}
+.sigma_column{
+	display: flex;
+}
+.sigma_block{
+	margin: 124px;
+width: 672px;
+height: 192px;
+margin-left: 48px;
+
+}
+.sigma_text{
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 48px;
+	color:#1C3554;
+}
+.sigma_subtext{
+	width: 222px;
+	height: 32px;
+margin: 32px;
+font-weight: 500;
+font-size: 24px;
+line-height: 32px;
+margin-left: 0px;
+color: #1C3554;
+}
+.sigma_t{
+	width: 336px;
+	height: 24px;
+	font-size: 14px;
+line-height: 24px;
+color: #808080;
+}
+.logo_container{
+	margin: 0px auto;
+	width: 1400px;
+	color: #1C3554;
+ margin-bottom: 56px;
+}
+.logo_img{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 56px;
+}
+.logo_im{
+width: 249.6px;
+height: 104px;
+}
+.lo_im {
+	display: flex;
+	justify-content: space-evenly;
+}
+.logo_text{
+
+font-family: Rubik;
+font-size: 48px;
+font-weight: 700;
+line-height: 63.98px;
+
+text-align:center ;
+}
+.blog_text{
+	width: 374px;
+height: 64px;
+top: 5716px;
+left: 104px;
+gap: 0px;
+opacity: 0px;
+font-family: Rubik;
+font-size: 48px;
+font-weight: 700;
+line-height: 63.98px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #1C3554;
+margin-bottom: 56px;
+}
+.blog_menu{
+	display: flex;
+	justify-content: space-between;
+}
+.blog_container{
+	margin: 0px auto;
+	width: 1400px;
+}
+.blog_column{
+	margin-top: 160px;
+}
+.foot_container{
+	width: 1400px;
+	margin: 0px auto;
+}
+.foot_column{
+	background-color: #021934;
+	color: #FFFFFF;
+	padding: 80px 68px;
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 160px;
+}
+.foot_text{
+	width: 500px;
+}
+.f_text_subtext{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 180px;
+}
+
+.f_text_text{
+	font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 27px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+margin-top: 36px;
+
+}
+.foot_sub_menu{
+	display: flex;
+	justify-content: space-between;
+	width: 569px;
+}
+.menues{
+	width: 91px;
+	height: 208px;
+}
+.foot_sub_sub{
+	margin-top: 120px;
+	
+}
+	.fot_menu{
+		line-height: 32px;
+	}
+	.header_menu{
+		font-weight: 600;
+		margin-bottom: 24px;
+	}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="header_container">
+			<div class="header_logo"><img src="./Logo (1).png" alt="">
+			</div>
+			<div class="header_menu">
+				<div class="menu_item">Maktab haqida</div>
+				<div class="menu_item">O'quv dasturi</div>
+				<div class="menu_item">Qabul-2024</div>
+				<div class="menu_item">O'qituvchilar jamoasi</div>
+				<div class="menu_item header_button">Ariza yuborish</div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="main_container">
+			<div class="main_content">
+				<div class="main_title">2024-25 o‘quv yili uchun qabul boshlandi</div>
+				<div class="main_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, temporibus esse. Ducimus ea nam recusandae? Voluptatibus consectetur fuga ratione neque, tempora incidunt impedit odio ipsa quae illo. Eius, cumque sit!</div>
+				<div class="main_button">Ariza yuborish</div>
+				<div class="main_items">
+					<div class="main_item">Zamonaviy to'garaklar</div>
+					<div class="main_item">Tajribali ustozlar</div>
+					<div class="main_item">Maxsus o‘quv dasturlari</div>
+				</div>
+			</div>
+			<div class="main_img"><img src="./508f4f0e68931bcbef973ec3abf3f465.jpg" alt=""></div>
+		</div>
+	</div>
+    <div class="study">
+    <div class="study_container">
+        <div class="study_title">O'quv dasturi</div>
+        <div class="study_items">
+            <div class="study_item active">1-4 sinflar</div>
+            <div class="study_item">5-8 sinflar</div>
+            <div class="study_item">9-11 sinflar</div>
+        </div>
+	<div class="subjects">
+		<div class="sub">
+			<div class="sub_box">
+				<div class="sub_box_img"><img src="./15e77ac0d484f477a83ada220939a864.jpg" alt=""></div>
+				<div class="box_sub">
+					<div class="sub_sub">
+				<div class="sub_box_title">matematika</div>
+			</div>
+				<div class="sub_box_subtitle">Bolalarga ta'lim berishda 10+ yilik ish tajribasiga ega malakali ustoz</div>
+                <div class="sub_box_name">Teacher Ronaldo</div>
+			    </div>
+			</div>
+		</div>
+		<div class="sub">
+			<div class="sub_box">
+				<div class="sub_box_img"><img src="./9ec6cae44533a918213bab17f2291583.jpg" alt=""></div>
+				<div class="box_sub">
+					<div class="sub_sub">
+				<div class="sub_box_title">informatika</div>
+			</div>
+				<div class="sub_box_subtitle">Bolalarga ta'lim berishda 10+ yilik ish tajribasiga ega malakali ustoz</div>
+                <div class="sub_box_name">Teacher Ronaldo</div>
+			    </div>
+			</div>
+		</div>
+		<div class="sub">
+			<div class="sub_box">
+				<div class="sub_box_img"><img src="./b134c0fff32ec2f2a1306dd78f73b0b0--ronaldo-soccer-cr-ronaldo.jpg" alt=""></div>
+				<div class="box_sub">
+					<div class="sub_sub">
+				<div class="sub_box_title">ingliz tili</div>
+			</div>
+				<div class="sub_box_subtitle">Bolalarga ta'lim berishda 10+ yilik ish tajribasiga ega malakali ustoz</div>
+                <div class="sub_box_name">Teacher Ronaldo</div>
+			    </div>
+			</div>
+		</div>
+		<div class="sub">
+			<div class="sub_box">
+				<div class="sub_box_img"><img src="./b55a82623d0a03ea8e2a359c3db20866.jpg" alt=""></div>
+				<div class="box_sub">
+					<div class="sub_sub">
+				<div class="sub_box_title">fizika</div>
+			</div>
+				<div class="sub_box_subtitle">Bolalarga ta'lim berishda 10+ yilik ish tajribasiga ega malakali ustoz</div>
+                <div class="sub_box_name">Teacher Ronaldo</div>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<div class="subjects">
+		<div class="sub">
+			<div class="sub_box">
+				<div class="sub_box_img"><img src="./eeca99f6cd35a0dc2074f806ffd6562e.jpg" alt=""></div>
+				<div class="box_sub">
+					<div class="sub_sub">
+				<div class="sub_box_title">sport</div>
+			</div>
+				<div class="sub_box_subtitle">Bolalarga ta'lim berishda 10+ yilik ish tajribasiga ega malakali ustoz</div>
+                <div class="sub_box_name">Teacher Ronaldo</div>
+			    </div>
+			</div>
+		</div>
+		<div class="sub">
+			<div class="sub_box">
+				<div class="sub_box_img"><img src="./f19c18ac517ec1b2dc1e91b791928195.jpg" alt=""></div>
+				<div class="box_sub">
+					<div class="sub_sub">
+				<div class="sub_box_title">IELTS</div>
+			</div>
+				<div class="sub_box_subtitle">Bolalarga ta'lim berishda 10+ yilik ish tajribasiga ega malakali ustoz</div>
+                <div class="sub_box_name">Teacher Ronaldo</div>
+			    </div>
+			</div>
+		</div>
+		<div class="sub">
+			<div class="sub_box">
+				<div class="sub_box_img"><img src="./f354de9b023565cf7959d021dfcf5cba.jpg" alt=""></div>
+				<div class="box_sub">
+					<div class="sub_sub">
+				<div class="sub_box_title">SAT</div>
+			</div>
+				<div class="sub_box_subtitle">Bolalarga ta'lim berishda 10+ yilik ish tajribasiga ega malakali ustoz</div>
+                <div class="sub_box_name">Teacher Ronaldo</div>
+			    </div>
+			</div>
+		</div>
+		<div class="sub">
+			<div class="sub_box">
+				<div class="sub_box_img"><img src="./image.webp" alt=""></div>
+				<div class="box_sub">
+					<div class="sub_sub">
+				<div class="sub_box_title">tarbiya</div>
+			</div>
+				<div class="sub_box_subtitle">Bolalarga ta'lim berishda 10+ yilik ish tajribasiga ega malakali ustoz</div>
+                <div class="sub_box_name">Teacher Ronaldo</div>
+			    </div>
+			</div>
+		</div>
+	</div>
+    </div>
+    </div>
+    <div class="maymunchalar">
+ <div class="maymun">
+	<div class="maymun_container">
+<div class="maymun_title">Chuqurlashtirilgan fanlar</div>
+<div class="maymun_dada">
+<div class="maymun_items"><img src="./90.jpg" alt="">tarbiya</div>
+<div class="maymun_items"><img src="./91.jpg" alt="">sport</div>
+<div class="maymun_items"><img src="./92.jpg" alt="">o'qish</div>
+<div class="maymun_items"><img src="./93.jpg" alt="">mashaqat</div>
+</div>
+	</div>
+ </div>
+ <div class="maymun">
+	<div class="maymun_container">
+<div class="maymun_title"></div>
+<div class="maymun_dada">
+<div class="maymun_items"><img src="./94.jpg" alt="">ingliz tili</div>
+<div class="maymun_items"><img src="./95.jpg" alt="">informatika</div>
+<div class="maymun_items"><img src="./96.jpg" alt="">fizika</div>
+<div class="maymun_items"><img src="./97.jpg" alt="">matematika</div>
+</div>
+	</div>
+ </div>
+    </div>
+    <div class="info">
+	<div class="info_container">
+		<div class="info_column">
+			<div class="info_box">
+				<div class="info_img"><img src="./video_library.png" alt=""></div>
+				<div class="info_num">+20</div>
+				<div class="info_text">Fanlar</div>
+			</div>
+			<div class="info_box">
+				<div class="info_img"><img src="./people.png" alt=""></div>
+				<div class="info_num">+70</div>
+				<div class="info_text">ustozlar</div>
+			</div>
+			<div class="info_box">
+				<div class="info_img"><img src="./Container (2).png" alt=""></div>
+				<div class="info_num">+500</div>
+				<div class="info_text">O'quvchilar</div>
+			</div>
+			<div class="info_box">
+				<div class="info_img"><img src="./flag.png" alt=""></div>
+				<div class="info_num">2</div>
+				<div class="info_text">filialar</div>
+			</div>
+		</div>
+	</div>
+    </div>
+    <div class="become">
+	<div class="become_container">
+		<div class="become_column">
+		<div class="become_img"><img src="./i.webp" alt=""></div>
+		<div class="become_text">
+			<div class="b_t_t">Become an Mentor</div>
+			<div class="b_t_s">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum voluptates minima, omnis adipisci autem, excepturi illo aliquid explicabo nesciunt, nulla mollitia eum odit. Quasi vel quis commodi optio possimus, ipsa accusamus velit aut facere iure error quod placeat architecto laudantium reiciendis suscipit.</div>
+			<div class="b_t_g">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cumque voluptate et reprehenderit magni, recusandae fugit quos veniam suscipit consequatur in ea corrupti soluta molestias exercitationem pariatur? Odio repudiandae tenetur nihil quod ex laboriosam fugit, odit velit quo at fugiat nesciunt ut.</div>
+			<div class="b_t_f">Start Teaching</div>
+		</div>
+	</div>
+</div>
+    </div>
+	<div class="sigma">
+		<div class="sigma_container">
+			<div class="sigma_column">
+				<div class="sigma_img"><img src="./42a200421bdc3faf1e0f089ad7b1ccf2_cropped_666x833.webp" alt=""></div>
+				<div class="sigma_block">
+					<div class="sigma_text">After studying here I gained new knowledge and insights. The mentor was very friendly and guided me to get the knowledge I wanted. Thank you!</div>
+					<div class="sigma_subtext">KecekArif</div>
+					<div class="sigma_t">Yang punya Surabaya nanti kapan - kapan tapi</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="logo">
+		<div class="logo_container">
+			<div class="logo_column">
+				<div class="logo_text">Trusted by Company</div>
+				<div class="logo_img">
+					<div class="logo_studio"><img src="./05.png" alt=""></div>
+					<div class="logo_studio"><img src="./01.png" alt=""></div>
+				    <div class="logo_studio"><img src="./02.png" alt=""></div>
+		            <div class="logo_studio"><img src="./05.png" alt=""></div>
+	            </div>
+	            <div class="lo_im">
+	       <div class="logo_im"><img src="./02.png" alt=""></div>
+		   <div class="logo_im"><img src="./08.png" alt=""></div>
+                </div>
+		    </div>
+        </div>
+    </div>
+	<div class="blog">
+		<div class="blog_container">
+			<div class="blog_column">
+				<div class="blog_text">The Latest Blog</div>
+				<div class="blog_menu">
+							<div class="sub">
+								<div class="sub_box">
+									<div class="sub_box_img"><img src="./ffffff.jpg" alt=""></div>
+									<div class="box_sub">
+									<div class="sub_box_subtitle">Bolalarga ta'lim berishda 10+ yilik ish tajribasiga ega malakali ustoz</div>
+									<div class="sub_box_name">Teacher Ronaldo</div>
+									</div>
+								</div>
+							</div>
+							<div class="sub">
+								<div class="sub_box">
+									<div class="sub_box_img"><img src="./gggg.jpg" alt=""></div>
+									<div class="box_sub">
+								
+									<div class="sub_box_subtitle">Bolalarga ta'lim berishda 10+ yilik ish tajribasiga ega malakali ustoz</div>
+									<div class="sub_box_name">Teacher Ronaldo</div>
+									</div>
+								</div>
+							</div>
+							<div class="sub">
+								<div class="sub_box">
+									<div class="sub_box_img"><img src="./hhhh.jpg" alt=""></div>
+									<div class="box_sub">
+								
+									<div class="sub_box_subtitle">Bolalarga ta'lim berishda 10+ yilik ish tajribasiga ega malakali ustoz</div>
+									<div class="sub_box_name">Teacher Ronaldo</div>
+									</div>
+								</div>
+						  	</div>
+						</div>
+					</div>
+				</div>
+	</div>
+	<div class="foot">
+		<div class="foot_container">
+			<div class="foot_column">
+				<div class="foot_text">
+					<div class="f_text_logo"><img src="./Logo.png" alt=""></div>
+					<div class="f_text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tristique placerat eleifend aliquam pellentesque facilisis ultrices. Imperdiet mus urna egestas at tellus. </div>
+					<div class="f_text_subtext">
+						<div class="f_t_s_l">Privacy Policy</div>
+						<div class="f_t_s_l">Terms and Condition</div>
+					</div>
+				</div>
+				<div class="foot_subtext">
+					<div class="foot_sub_menu">
+						<div class="menues">
+							<div class="header_menu">About</div>
+							<div class="fot_menu">About us Courses Mentor Contact Us</div>
+						</div>
+						<div class="menues">
+							<div class="header_menu">About</div>
+							<div class="fot_menu">About us Courses Mentor Contact Us</div>
+						</div>
+						<div class="menues">
+							<div class="header_menu">About</div>
+							<div class="fot_menu">About us Courses Mentor Contact Us</div>
+						</div>
+					</div>
+					<div class="foot_sub_sub">@2025 TanahAir Studio. All rights reserved.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
